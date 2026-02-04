@@ -21,6 +21,7 @@ A Claude Code plugin that transforms your workflow to use persistent markdown fi
 [![Moltbot](https://img.shields.io/badge/Moltbot-Skills-FF6B6B)](https://docs.molt.bot/tools/skills)
 [![Kiro](https://img.shields.io/badge/Kiro-Steering-00D4AA)](https://kiro.dev/docs/cli/steering/)
 [![AdaL CLI](https://img.shields.io/badge/AdaL%20CLI-Skills-9B59B6)](https://docs.sylph.ai/features/plugins-and-skills)
+[![Pi Agent](https://img.shields.io/badge/Pi%20Agent-Skills-FF4081)](https://pi.dev)
 [![Version](https://img.shields.io/badge/version-2.13.0-brightgreen)](https://github.com/OthmanAdi/planning-with-files/releases)
 [![SkillCheck Validated](https://img.shields.io/badge/SkillCheck-Validated-4c1)](https://getskillcheck.com)
 
@@ -73,6 +74,7 @@ See [docs/installation.md](docs/installation.md) for all installation methods.
 | Antigravity | ✅ Full Support | [Antigravity Setup](docs/antigravity.md) | Workspace/Personal Skill |
 | CodeBuddy | ✅ Full Support | [CodeBuddy Setup](docs/codebuddy.md) | Workspace/Personal Skill |
 | AdaL CLI (Sylph AI) | ✅ Full Support | [AdaL Setup](docs/adal.md) | Personal/Project Skills |
+| Pi Agent | ✅ Full Support | [Pi Agent Setup](docs/pi-agent.md) | Agent Skills |
 
 > **Note:** If your IDE uses the legacy Rules system instead of Skills, see the [`legacy-rules-support`](https://github.com/OthmanAdi/planning-with-files/tree/legacy-rules-support) branch.
 
@@ -97,6 +99,7 @@ See [docs/installation.md](docs/installation.md) for all installation methods.
 | [Antigravity Setup](docs/antigravity.md) | Antigravity IDE integration guide |
 | [CodeBuddy Setup](docs/codebuddy.md) | CodeBuddy IDE integration guide |
 | [AdaL CLI Setup](docs/adal.md) | AdaL CLI / Sylph AI integration guide |
+| [Pi Agent Setup](docs/pi-agent.md) | Pi Agent integration guide |
 
 ## Versions
 
@@ -271,6 +274,9 @@ planning-with-files/
 │   └── skills/
 ├── .adal/                   # AdaL CLI / Sylph AI skills
 │   └── skills/
+├── .pi/                     # Pi Agent skills
+│   └── skills/
+│       └── planning-with-files/
 ├── CHANGELOG.md
 ├── LICENSE
 └── README.md
