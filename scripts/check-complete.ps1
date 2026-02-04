@@ -18,11 +18,20 @@ Write-Host ""
 # Read file content
 $content = Get-Content $PlanFile -Raw
 
-# Count phases by status
+# Count total phases
 $TOTAL = ([regex]::Matches($content, "### Phase")).Count
+
+# Check for **Status:** format first
 $COMPLETE = ([regex]::Matches($content, "\*\*Status:\*\* complete")).Count
 $IN_PROGRESS = ([regex]::Matches($content, "\*\*Status:\*\* in_progress")).Count
 $PENDING = ([regex]::Matches($content, "\*\*Status:\*\* pending")).Count
+
+# Fallback: check for [complete] inline format if **Status:** not found
+if ($COMPLETE -eq 0 -and $IN_PROGRESS -eq 0 -and $PENDING -eq 0) {
+    $COMPLETE = ([regex]::Matches($content, "\[complete\]")).Count
+    $IN_PROGRESS = ([regex]::Matches($content, "\[in_progress\]")).Count
+    $PENDING = ([regex]::Matches($content, "\[pending\]")).Count
+}
 
 Write-Host "Total phases:   $TOTAL"
 Write-Host "Complete:       $COMPLETE"

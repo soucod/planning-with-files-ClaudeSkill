@@ -308,9 +308,9 @@ planning-with-files/
 
 ## Kilo Code Support
 
-This skill also supports Kilo Code AI through the `.kilocode/rules/` directory.
+This skill also supports Kilo Code AI through the `.kilocode/skills/` directory.
 
-The [`.kilocode/rules/planning-with-files.md`](.kilocode/rules/planning-with-files.md) file contains all the planning guidelines formatted for Kilo Code's rules system, providing the same Manus-style planning workflow for Kilo Code users.
+The [`.kilocode/skills/planning-with-files/SKILL.md`](.kilocode/skills/planning-with-files/SKILL.md) file contains all the planning guidelines formatted for Kilo Code's skills system, providing the same Manus-style planning workflow for Kilo Code users.
 
 **Windows users:** The skill now includes PowerShell scripts ([`init-session.ps1`](skills/planning-with-files/scripts/init-session.ps1) and [`check-complete.ps1`](skills/planning-with-files/scripts/check-complete.ps1)) for native Windows support.
 
