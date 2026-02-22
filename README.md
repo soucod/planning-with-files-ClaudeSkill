@@ -31,10 +31,11 @@ If this skill helps you work smarter, that's all I wanted.
 <details>
 <summary><strong>📦 Releases & Session Recovery</strong></summary>
 
-### Current Version: v2.15.1
+### Current Version: v2.16.0
 
 | Version | Highlights |
 |---------|------------|
+| **v2.16.0** | GitHub Copilot hooks support (thanks @lincolnwan!) |
 | **v2.15.1** | Session catchup false-positive fix (thanks @gydx6!) |
 | **v2.15.0** | `/plan:status` command, OpenCode compatibility fix |
 | **v2.14.0** | Pi Agent support, OpenClaw docs update, Codex path fix |
@@ -106,7 +107,7 @@ A Claude Code plugin that transforms your workflow to use persistent markdown fi
 [![AdaL CLI](https://img.shields.io/badge/AdaL%20CLI-Skills-9B59B6)](https://docs.sylph.ai/features/plugins-and-skills)
 [![Pi Agent](https://img.shields.io/badge/Pi%20Agent-Skills-FF4081)](https://pi.dev)
 [![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Hooks-000000)](https://docs.github.com/en/copilot/reference/hooks-configuration)
-[![Version](https://img.shields.io/badge/version-2.15.1-brightgreen)](https://github.com/OthmanAdi/planning-with-files/releases)
+[![Version](https://img.shields.io/badge/version-2.16.0-brightgreen)](https://github.com/OthmanAdi/planning-with-files/releases)
 [![SkillCheck Validated](https://img.shields.io/badge/SkillCheck-Validated-4c1)](https://getskillcheck.com)
 
 ## Quick Install
