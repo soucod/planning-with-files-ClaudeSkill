@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.16.1] - 2026-02-25
+
+### Fixed
+
+- **Copilot hooks garbled characters on Windows** (Issue #82, reported by @Hexiaopi)
+  - PowerShell scripts now set `$OutputEncoding` and `[Console]::OutputEncoding` to UTF-8 before any output — fixes garbled diamond characters (◆) caused by PowerShell 5.x defaulting to UTF-16LE stdout
+  - Bash scripts now use `json.dumps(..., ensure_ascii=False)` — preserves UTF-8 characters (emojis, accented letters, CJK) in `task_plan.md` instead of converting them to raw `XXXX` escape sequences
+
+### Thanks
+
+- @Hexiaopi for reporting the garbled characters issue (Issue #82)
+
+---
+
 ## [2.16.0] - 2026-02-22
 
 ### Added
